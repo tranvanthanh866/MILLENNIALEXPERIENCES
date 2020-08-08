@@ -1,0 +1,117 @@
+// Header
+#logo {
+  a {
+    margin-right: 5px;
+    &:hover {
+      text-decoration: none;
+    }
+    img {
+      height: 38px;
+    }
+    .brand-name {
+      text-transform: uppercase;
+      color: #d43a4e;
+      font-weight: 500;
+    }
+  }
+}
+
+// Footer
+footer {
+  width:100%;
+  min-height:250px;
+  padding: 55px 0 0;
+  .name-brand {
+    color: #d43a4e;
+  }
+  p, span {
+    font-size:13px;
+    padding-bottom:0;
+    margin-bottom:8px;
+  }
+  .footer_ul_amrc {
+    margin:0;
+    list-style-type:none;
+    font-size:14px;
+    padding:0 0 10px 0 ;
+    li {
+      padding:0 0 5px 0;
+      a{
+        color: #212529;
+        &hover{
+          text-decoration:none;
+        }
+      }
+    }
+  }
+}
+
+// main content
+.main-content {
+  section {
+    padding: 96px 0;
+    position: relative;
+    overflow: hidden;
+    .section-title {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 400;
+      font-size: 1.7rem;
+    }
+  }
+}
+
+// common css
+.bg-block-2 {
+  background: #f5f5f5 !important;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.mb10 {
+  padding-bottom:15px ;
+}
+.bottom_border {
+  border-bottom:1px solid #323f45;
+  padding-bottom:20px;
+}
+button {
+  &.btn-customize {
+    padding: 15px 30px;
+    color: white;
+    background-color: #0375b4;
+    border: none;
+    margin-top: 20px;
+    &:hover {
+      color: white;
+      background: #062f4f;
+    }
+  }
+}
+
+// for mobile
+@media (min-width: 1024px) {
+  header #navbarResponsive ul li {
+    margin-left: 38px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-content section{
+    padding: 26px 0;
+  }
+  section .wrap-item button {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 320px) {
+  #logo {
+    span{
+      font-size: 16px;
+    }
+    .brand-name {
+      display: none;
+    }
+  }
+}
