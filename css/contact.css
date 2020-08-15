@@ -105,8 +105,16 @@ button,
   display: block;
   clear: both;
 }
+.brand-name {
+  text-transform: uppercase;
+  color: #D43A4E;
+  font-weight: 500;
+}
 #logo a {
   margin-right: 5px;
+  text-transform: uppercase;
+  color: #D43A4E;
+  font-weight: 500;
 }
 #logo a:hover {
   text-decoration: none;
@@ -114,18 +122,13 @@ button,
 #logo a img {
   height: 38px;
 }
-#logo a .brand-name {
-  text-transform: uppercase;
-  color: #d43a4e;
-  font-weight: 500;
-}
 footer {
   width: 100%;
   min-height: 250px;
   padding: 55px 0 0;
 }
 footer .name-brand {
-  color: #d43a4e;
+  color: #D43A4E;
 }
 footer p,
 footer span {
@@ -160,7 +163,7 @@ footer .footer_ul_amrc li ahover {
   font-size: 1.7rem;
 }
 .bg-block-2 {
-  background: #f5f5f5 !important;
+  background: #CAEBF2 !important;
 }
 .uppercase {
   text-transform: uppercase;
@@ -174,13 +177,13 @@ footer .footer_ul_amrc li ahover {
 }
 button.btn-customize {
   padding: 15px 30px;
-  color: white;
+  color: #CAEBF2;
   background-color: #0375b4;
   border: none;
   margin-top: 20px;
 }
 button.btn-customize:hover {
-  color: white;
+  color: #CAEBF2;
   background: #062f4f;
 }
 @media (min-width: 1024px) {
@@ -199,9 +202,6 @@ button.btn-customize:hover {
 @media (max-width: 320px) {
   #logo span {
     font-size: 16px;
-  }
-  #logo .brand-name {
-    display: none;
   }
 }
 .page-contact .section-content {

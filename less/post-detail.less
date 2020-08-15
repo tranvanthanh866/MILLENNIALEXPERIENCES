@@ -1,0 +1,27 @@
+@import "app.less";
+.main-content {
+  section {
+    padding: 25px 0;
+  }
+  .section-content img {
+    width: 826px;
+    max-width: 100%;
+  }
+  .post-detail {
+    text-align: justify;
+    padding: 93px 54px 55px;
+    margin-top: -63px;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+    transition: box-shadow 0.1s ease, transform 0.1s ease;
+    z-index: 10;
+  }
+  .section-post .item-image {
+    z-index: 100;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content .post-detail {
+    padding: 93px 15px 55px;
+  }
+}
