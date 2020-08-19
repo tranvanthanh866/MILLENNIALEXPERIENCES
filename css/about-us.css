@@ -130,6 +130,10 @@ footer {
 footer .name-brand {
   color: #D43A4E;
 }
+footer .bottom-footer > div {
+  line-height: 100%;
+  padding: 8px;
+}
 footer p,
 footer span {
   font-size: 13px;

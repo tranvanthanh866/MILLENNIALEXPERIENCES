@@ -208,11 +208,131 @@ button.btn-customize:hover {
     font-size: 16px;
   }
 }
-.page-contact .section-content {
-  width: 538px;
-  margin: 0 auto;
+.main-content section {
+  padding: 50px 0;
+  position: relative;
+  overflow: hidden;
+}
+.main-content .section-cover {
+  padding: 0 0 96px 0;
+}
+button.btn-customize {
+  margin: 0;
+}
+.main-content .masthead {
+  height: 30vh;
+  min-height: 396px;
+  background-image: url("./images/FAQ-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.main-content .masthead .container {
+  color: #f9f2f2;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 677px;
   max-width: 100%;
 }
-.page-contact .main-content section {
-  padding: 99px 0 96px;
+.main-content .masthead .title {
+  font-weight: bold;
+  margin-bottom: 17px;
+}
+.main-content .masthead span.lead {
+  font-size: 1rem;
+}
+.panel {
+  margin-bottom: 24px;
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+.panel-body {
+  padding: 15px;
+}
+.panel-body > *:last-child {
+  margin-bottom: 0;
+}
+.panel-heading {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.panel-heading > .dropdown .dropdown-toggle {
+  color: inherit;
+}
+.panel-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: inherit;
+}
+.panel-title > a,
+.panel-title > small,
+.panel-title > .small,
+.panel-title > small > a,
+.panel-title > .small > a {
+  color: inherit;
+}
+.panel-group {
+  margin-bottom: 24px;
+}
+.panel-group .panel {
+  margin-bottom: 0;
+  border-radius: 4px;
+}
+.panel-group .panel .panel {
+  margin-top: 5px;
+}
+.panel-group .panel-heading {
+  border-bottom: 0;
+}
+.panel-group .panel-heading .panel-collapse .panel-body,
+.panel-group .panel-heading .panel-collapse .list-group {
+  border-top: 1px solid #dddddd;
+}
+.panel-group .panel-heading .panel-collapse .panel-body {
+  border-bottom: 1px solid #dddddd;
+}
+.panel-warning {
+  color: #000000 !important;
+  background-color: #e8e8e8 !important;
+  border-color: #e8e8e8 !important;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.panel-warning .panel-heading > h4 {
+  font-size: 1rem;
+}
+.panel-warning .panel-heading {
+  border-top-color: #e8e8e8;
+}
+.panel-warning .panel-footer {
+  border-bottom-color: #e8e8e8;
+}
+.panel-collapse > .panel-body {
+  background-color: #ffffff;
+  color: #000000;
+  border-top-color: #e8e8e8;
+  font-size: 15px;
+  overflow: hidden;
+  border: 2px solid #e8e8e8;
+}
+.panel-title > a:before {
+  content: "\f068";
+  float: right !important;
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.panel-title > a.collapsed:before {
+  content: "\f067";
+}
+.panel-title > a {
+  text-decoration: none;
 }

@@ -208,11 +208,18 @@ button.btn-customize:hover {
     font-size: 16px;
   }
 }
-.page-contact .section-content {
-  width: 538px;
-  margin: 0 auto;
-  max-width: 100%;
+.main-content section {
+  padding: 18px 0;
 }
-.page-contact .main-content section {
-  padding: 99px 0 96px;
+.main-content section #btn-contact-form {
+  margin-top: 0;
+}
+.red {
+  color: red;
+}
+.form-area {
+  background-color: #FAFAFA;
+  padding: 10px 40px 60px;
+  margin: 10px 0px 60px;
+  border: 1px solid GREY;
 }

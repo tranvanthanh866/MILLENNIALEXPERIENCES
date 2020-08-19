@@ -39,7 +39,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">
+                        <a class="nav-link" href="trips.html">
                             Trips
                         </a>
                     </li>
@@ -135,47 +135,40 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container bottom-footer">
         <div class="text-center">
             <span>&copy; 2020 <a class="name-brand" href="./index.html"> <b>Millennial Experiences</b></a></span> <br>
-            <p>All rights reserved</p>
+            <span>All rights reserved</span>
         </div>
     </div>
 
 </footer>
 <script src="./lib/jquery-3.5.1.min.js"></script>
 <script src="./lib/bootstrap.bundle.min.js"></script>
+<script src="./lib/mustache.js"></script>
 <script src="./lib/pagination.min.js"></script>
 <script src="./json/posts.js"></script>
+<script id="template" type="x-tmpl-mustache">
+        {{#data}}
+        <div class="col-md-12 post">
+            <h4><a href="{{url}}">{{title}}</a></h4>
+            <p>{{description}}</p>
+            <p><a class="btn btn-read-more" href="post-detail.html?post={{url}}">Read more</a></p>
+        </div>
+        {{/data}}
+</script>
 <script>
     $(function(){
-        function template(data) {
-            var html = '';
-            $.each(data, function(index, item){
-                html += '<div class="col-md-12 post">';
-                html += '<h4>\n' +
-                    '<a href="'+item.url+'"\n' +
-                    'class="post-title">'+item.title+'</a>\n' +
-                    '</h4>';
-                html += '<p>'+item.description+'</p>';
-                html += '<p><a class="btn btn-read-more" href="post-detail.html?post='+item.url+'">Rea dmore</a></p>';
-                html += '</div>';
-            });
-            html += '';
-            return html;
-        }
-        /*$.getJSON('./json/posts.json').done(function( json ) {
-        });*/
-
         var container = $('#pagination-container');
         container.pagination({
             dataSource: posts.data,
             pageSize: 3,
             totalNumberLocator: posts.data.length,
             callback: function(data, pagination) {
-                //console.log(pagination);
-                var html = template(data);
-                $('#data-container').html(html);
+                var template = $("#template").html();
+                Mustache.parse(template);
+                var rendered = Mustache.render(template, {'data':data});
+                $("#data-container").html(rendered);
             }
         });
     });
