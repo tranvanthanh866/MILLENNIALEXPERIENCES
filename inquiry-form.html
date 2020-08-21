@@ -40,19 +40,19 @@
                             Home
                         </a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">
-                            About us
-                        </a>
-                    </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="trips.html">
                             Trips
                         </a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="trips-on-sale.html">
                             On sale
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">
+                            About us
                         </a>
                     </li>
                     <li class="nav-item">
@@ -76,7 +76,7 @@
             <div class="row justify-content-md-center">
                 <div class="col-md-7">
                     <div class="form-area">
-                        <form role="form" id="form-inquiry">
+                        <form role="form" id="form-inquiry" action="send-success.html" method="GET">
                             <br style="clear:both">
                             <h3 style="margin-bottom: 25px; text-align: center;">Travel Inquiry </h3>
                             <p>Please help us to assist with your inquiry by providing the following information.</p>
@@ -115,7 +115,7 @@
                                           maxlength="140" rows="7"></textarea>
                             </div>
 
-                            <button type="button" id="btn-inquiry-form" name="submit" class="btn btn-customize">
+                            <button type="submit" id="btn-inquiry-form" name="submit" class="btn btn-customize">
                                 Send
                             </button>
                         </form>
